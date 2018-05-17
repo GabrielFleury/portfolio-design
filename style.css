@@ -63,7 +63,7 @@ header{
 }
 header:after{
     content: "";
-    display: block;
+    display: none;
     background: url("img/alien.png") no-repeat;
     width: 81px;
     height: 83px;
