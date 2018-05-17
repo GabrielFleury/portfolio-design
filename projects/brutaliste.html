@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Gabriel Fleury">
+	<meta name="description" content="Portfolio of Gabriel Fleury">
+	<meta name="keywords" content="Gabriel Fleury,Gabfleury,portfolio,game design,game designer,NAD,Montreal">
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="/icon.ico" >
+	<title>
+		Gabriel Fleury
+	</title>
+		
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="../script.js"></script>
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-36359142-3', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</head>
+
+<body>
+
+<div id="top">
+	<header>
+		<a href="../"><h1><img src="../img/logo.png" /></h1></a>
+		
+		<nav>
+			<a href="../Gabriel Fleury - Resume.pdf" id="btnResume">Resume</a>
+			
+			<a href="../" class="navBtn" id="btnNav1">Portfolio</a> <a href="../about.html" class="navBtn" id="btnNav2">About Me</a> <a href="../contact.html" class="navBtn" id="btnNav3">Contact</a>
+		</nav>
+	</header>
+</div>
+
+
+
+<div id="content">
+	<h2>Le Brutaliste</h2>
+	<p><i>Le Brutaliste</i> is a mobile game I worked on at NAD, made in Unreal 4 with a team of 21.<br />
+	It is available on <a href="https://play.google.com/store/apps/details?id=com.epicgames.LeBrutaliste&hl=en" target="_blank">Google Play Store</a> for free.
+	</p>
+	
+	<h3>About:</h3>
+	<p>In <i>Le Brutaliste</i>, you play as Howard, an angry architect in 1940s Montreal who seeks revenge against his rival, Peter. Tap and swipe as Howard runs forward to destroy as much of Peter's creations as you can!
+	</p>
+	
+	<h3>My tasks:</h3>
+	<p>Game design, level design on 3 stages, menu navigation, trailer
+	</p>
+	
+	<div class="video-container">
+		<iframe width="800" height="450" src="https://www.youtube.com/embed/L4wp7hbrM28?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<p style="text-align:center">Video reflects the work of the entire team.</p>
+	
+	<div class="showcase_container"><img src="img/Brutaliste_LevelSquare.jpg" class="showcase" style="width:100%"/></div>
+	<p style="text-align:center">Plan of the level shown in the video above, annoted with explanations.</p>
+	
+	<!--
+	<div id="slider" class="sliderBrutaliste">
+	  <a class="control_next">></a>
+	  <a class="control_prev"><</a>
+	  <ul>
+		<li><img src="img/brutaliste_promo1.jpg"/></li>
+		<li><img src="img/brutaliste_promo2.jpg"/></li>
+		<li><img src="img/brutaliste_promo3.jpg"/></li>
+	  </ul>  
+	</div>
+	-->
+	
+	<p>The basic rules of the game were already decided before I joined the project. My tasks were to "find the fun" and balance different aspects of the game to make it satisfying. I documented the heights and color codings of the obstacles and the rules of a level design for others to follow. 
+	</p>
+		
+	
+	<h3>State machines & Diagrams</h3>
+	<p>
+	I did various diagrams to help the team.
+	</p>
+	
+	<div class="showcase_container"><img src="img/Brutaliste_Menus.jpg" class="showcase" style="width:100%"/></div>
+	<p style="text-align:center">Flow of the menus, to help the programmers and the UI artist.<br/>Not illustrated here are alternative scenarios where I cut less important features such as "Mode Défi" in case we had to scale back.</p><br/>
+	<div class="showcase_container"><img src="img/brutaliste_SchemaAnimSheet.jpg" class="showcase" style="width:100%"/></div>
+	<p style="text-align:center">State machine explaining which actions trigger which animations. Made to help the programmers and the animators.</p><br/>
+	<div class="showcase_container"><img src="img/brutaliste_mesures.jpg" class="showcase" style="width:100%"/></div>
+	<p style="text-align:center">Diagram showing important scales after early playtesting, to help level designers and myself to build levels, and to give modelers guidelines on model sizes.</p><br/>
+	
+	
+		
+	<h3>The tutorial</h3>
+	<p>
+	Both the programmers and artists were running out of time and we still didn't have a tutorial for the game. I took care of finding a simple way to explain the game without needing much extra resources. Instead of starting the game directly in Montreal, Howard begings in a 3D blueprint, then at the end of the tutorial tears up and turns into a street with buildings.<br />
+	The player gets introduced to mechanics with pop-up messages, then pictograms of the required touch motions are placed on the background, giving the players an early view of what to expect in a normal level in terms of pacing.<br />
+	We had bigger plans for the tutorial, but this solution was better than no tutorial at all and was done by myself in a few days.
+	</p>
+	
+	<div id="slider2" class="sliderBrutaliste">
+	  <a class="control_next2">></a>
+	  <a class="control_prev2"><</a>
+	  <ul>
+		<li><img src="img/brutaliste_tuto1.png"/></li>
+		<li><img src="img/brutaliste_tuto2.png"/></li>
+		<li><img src="img/brutaliste_tuto3.png"/></li>
+		<li><img src="img/brutaliste_tuto4.png"/></li>
+		<li><img src="img/brutaliste_tuto5.png"/></li>
+	  </ul>  
+	</div>
+	
+</div>
+
+</body>
+
+</html>

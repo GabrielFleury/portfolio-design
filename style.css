@@ -1,0 +1,354 @@
+@charset "utf-8";
+
+* { margin:0; padding:0; }
+article, aside, figure, footer, header, hgroup, nav, section { display:block; }
+a img{ border-style:none;}
+
+/* Font */
+@font-face {
+    font-family: Cen;
+    src: url("tw-cen-mt-condensed-medium.ttf");
+}
+
+#reel{
+	margin: 15px auto;
+    width: 50%;
+}
+
+.video-container {
+	position:relative;
+	padding-bottom:41.8%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:10%;
+	width:80%;
+	height:100%;
+}
+
+#warning{
+	width:100%;
+	text-align:center;
+	font-size: 40px;
+	padding-top: 50px;
+}
+
+html{
+	background: #26282c;
+	font-family: Calibri, Arial, sans-serif;
+	color: #e4e0e0;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+#top{
+	width: 100%;
+	height: 168px;
+	background: #1a1b1f url("img/bg_header.png") center repeat-x;
+}
+
+header{
+	margin: 0 auto;
+	height: 168px;
+	width: 1400px;
+	color: #e4e0e0;
+	background: #1a1b1f url("img/bg_header.png") center repeat-x;
+}
+header:after{
+    content: "";
+    display: block;
+    background: url("img/alien.png") no-repeat;
+    width: 81px;
+    height: 83px;
+    float: left;
+	margin-left: 10px;
+	margin-top: 40px;
+    animation-name: alienanim;
+    animation-duration: 2s;
+}
+
+
+h1{
+	float: left;
+	width: 211px;
+	height: 146px;
+	margin-top: 10px;
+	margin-left: 50px;
+}
+h2{
+	margin-bottom: 10px;
+	font-size: 40px;
+	font-family: Cen, Arial, sans-serif;
+	font-weight: normal;
+}
+p{
+	clear:both;
+	margin-bottom: 20px;
+	font-size: 1.1em;
+}
+li{
+	font-size: 1.1em;
+}
+a{
+	color: #008abf;
+}
+a:hover{
+	color: #3fb9e7;
+}
+
+nav{
+	float: right;
+	margin-right: 50px;
+	text-align: right;
+	font-size: 40px;
+	font-family: Cen, Arial, sans-serif;
+}
+
+nav a{
+	text-decoration: none;
+	color: #e4e0e0;
+}
+nav a:hover{
+	color: #008abf;
+}
+#btnResume{
+	float: right;
+    font-size: 1em;
+    margin-bottom: 80px;
+}
+.navBtn{
+	margin-left: 40px;
+    float: left;
+}
+#btnNav1{
+	clear: both;
+}
+	
+.navCurrent{
+	text-decoration: underline;
+}
+
+#content{
+	width:1000px;
+	height:300px;
+	margin: 30px auto 0;
+}
+#mainContent{
+	width:1200px;
+	height:300px;
+	margin: 30px auto 0;
+}
+
+.projectThumbLink{
+	display: block;
+	position: relative;
+    width: 600px;
+    float: left;
+    height: 275px;
+    color: #e4e0e0;
+    font-size: 35px;
+    font-family: Cen, Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.thumbDesc{
+	position: absolute;
+	bottom: 0;
+    padding: 0 0 10px 20px;
+}
+
+.hoverBorder{
+   position: absolute;
+   width: inherit;
+   height: inherit;
+}
+.projectThumbLink:hover .hoverBorder{
+    background: url('img/lazyborder.png');
+}
+
+
+#cv{
+	position:absolute;
+	top:35px;
+	right:0;
+	width:85px;
+	width:110px;
+}
+
+.showcase_container{
+	position:relative;
+}
+.showcase{
+    display: block;
+    margin: 0 auto;
+	width:100%;
+	height: auto;
+}
+
+.expand{
+	opacity: 0;
+	position: absolute;
+    bottom: 10px;
+    left: 575px;
+}
+
+.showcase:hover + .expand { opacity: 1; }
+.expand:hover { opacity: 1; }
+.60percent { width: 60%; }
+
+
+
+
+/*///// Slider sizes /////*/
+.sliderBrutaliste ul li{
+  width: 600px;
+  height: 338px;
+}
+.sliderRox ul li{
+  width: 750px;
+  height: 422px;
+}
+
+/*///// main slider stuff /////*/
+#slider, #slider2 {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 20px auto;
+  border-radius: 4px;
+  
+}
+
+#slider ul, #slider2 ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li, #slider2 ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+#slider img, #slider2 img{
+	width:100%;
+}
+
+a.control_prev, a.control_next, a.control_prev2, a.control_next2 {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #26282c;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover, a.control_prev2:hover, a.control_next2:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev, a.control_prev2 {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next, a.control_next2 {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option, .slider_option2 {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+
+
+/* animation code */
+@keyframes alienanim {
+    from {margin-top: -85px; opacity: 0;}
+    to {margin-top: 40px; opacity: 1;}
+}
+
+
+
+
+/*///// responsive stuff /////*/
+@media screen and (max-width: 1400px){
+	header{
+		width: 100%;
+	}
+	
+	
+}
+
+@media screen and (max-width: 1200px){
+	#content, #mainContent{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 850px){
+	header:after{
+		content: "";
+		display: block;
+		background: url("img/alien.png") no-repeat;
+		width: 0px;
+		height: 0px;
+		float: left;
+		margin: 0px;
+	}
+}
+
+@media screen and (max-width: 800px){	
+	h1{
+		position: absolute;
+		top: 10px;
+		left: 15px;
+		margin: 0;
+	}
+	
+	nav{
+		margin-right: 15px;
+	}
+	nav a{
+		clear: both;
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+	.navBtn{
+		float: right;
+	}
+	#btnResume{
+		clear: both;
+		margin-bottom: 10px;
+	}
+	#cv{
+		position: static;
+	}
+}
